@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Generator - Grok Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar / Navigation (Grok style) -->
+        <aside class="sidebar">
+            <h2>AI Video Studio</h2>
+            <button class="new-chat-btn">+ New Generation</button>
+            <div class="history-list">
+                <p class="history-title">Recent Prompts</p>
+                <ul>
+                    <li>Cinematic drone shot...</li>
+                    <li>Neon cyberpunk city...</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Chat & Generator Area -->
+        <main class="main-content">
+            <header>
+                <h1>Transform Your Prompt into Video</h1>
+                <p>Type what you want to see, and let AI build the motion.</p>
+            </header>
+
+            <div class="chat-display" id="chatDisplay">
+                <!-- AI and User messages will appear here -->
+            </div>
+
+            <!-- Prompt Input Box -->
+            <div class="input-container">
+                <textarea id="promptInput" placeholder="Describe your video in detail (e.g., A cinematic drone flight over snowy mountains at sunset)..." rows="2"></textarea>
+                <button id="sendBtn">Generate</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
